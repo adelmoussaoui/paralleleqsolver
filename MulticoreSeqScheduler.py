@@ -2,7 +2,7 @@
 DAG Task Scheduler Benchmark
 ============================
 
-AUTHOR: Adel MOUSSAOUI
+AUTHOR: Adel MOUSSAOUI et al.
 
 PAPER: Performance Analysis of Dependency Aware Scheduling Algorithms
        for Parallel Nonlinear System Solving on Multicore Architectures
