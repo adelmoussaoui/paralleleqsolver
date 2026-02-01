@@ -3,7 +3,7 @@
 
 Benchmarking framework for evaluating dependency-aware scheduling algorithms for parallel nonlinear system solving on multicore architectures.
 
-**Author:** Adel MOUSSAOUI  
+**Author:** Adel MOUSSAOUI et al.  
 **Paper:** Performance Analysis of Dependency Aware Scheduling Algorithms for Parallel Nonlinear System Solving on Multicore Architectures
 
 ## Features
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ```bash
 # Run benchmark with default settings (structure comparison)
-python dag_scheduler_benchmark.py
+python MulticoreSeqScheduler.py
 
 # Results will be written to:
 # - comparison_tables.txt (performance metrics)
@@ -47,7 +47,7 @@ python dag_scheduler_benchmark.py
 
 ### Basic Configuration
 
-Edit the main block in `dag_scheduler_benchmark.py`:
+Edit the main block in `MulticoreSeqScheduler.py`:
 
 ```python
 # Select test scenarios
@@ -118,7 +118,7 @@ paralleleqsolver/
 ├── LICENSE
 ├── CONTRIBUTING.md
 ├── requirements.txt
-├── dag_scheduler_benchmark.py
+├── MulticoreSeqScheduler.py
 ├── comparison_tables.txt (generated)
 └── precedence_graphs.txt (generated)
 ```
@@ -137,12 +137,19 @@ paralleleqsolver/
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{moussaoui2026,
-  title={Performance Analysis of Dependency Aware Scheduling Algorithms for Parallel Nonlinear System Solving on Multicore Architectures},
-  author={Moussaoui, Adel},
-  year={2026}
-}
-```
+@article{Moussaoui_DependencyAwareScheduling,
+  title   = {Performance Analysis of Dependency Aware Scheduling Algorithms for Parallel Nonlinear System Solving on Multicore Architectures},
+  author  = {Moussaoui, Adel and Belhadj, Foudil and Gueddoudj, El Yazid and Bouamama, Salim and Boukhari, Nawel},
+  journal = {--},
+  volume  = {--},
+  number  = {--},
+  pages   = {--},
+  year    = {--},
+  publisher = {--},
+  address = {M'sila, Algeria},
+  email   = {adel.moussaoui@univ-msila.dz},
+  note    = {Corresponding author: Adel Moussaoui}
+}```
 
 ## License
 
