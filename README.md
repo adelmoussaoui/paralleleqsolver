@@ -115,6 +115,21 @@ num_graphs = 10
 - Node size statistics
 - Graph topology metrics
 - Validation results
+## Computational Constant C Estimation
+
+The `C_estimation.py` tool empirically calibrates the constant \(C\) in the complexity model \(t = C \cdot N^3\) for `scipy.optimize.fsolve`.
+
+### Equation Types Tested
+
+| Equation Type | Mathematical Form |
+|--------------|-------------------|
+| Simple Polynomial | \(x^2 - 4 = 0\) |
+| Trigonometric | \(\sin(x) + x^2 - 2 = 0\) |
+| Exponential | \(e^{x/100} - x/50 - 1 = 0\) |
+| Cubic Polynomial | \(x^3 - 2x^2 + x - 5 = 0\) |
+| Mixed Transcendental | \(\sin(x) + e^{x/100} - x^2/1000 - 2 = 0\) |
+
+### Example Output
 
 ## Project Structure
 
