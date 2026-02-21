@@ -130,9 +130,7 @@ The `C_estimation.py` tool empirically calibrates the constant \(C\) in the comp
 | Mixed Transcendental | \(\sin(x) + e^{x/100} - x^2/1000 - 2 = 0\) |
 
 ### Example Output
-===========================================
-FINAL SUMMARY - Recommended C Values
-===========================================
+
 Simple Polynomial (x² - 4 = 0) : C = 9.9985e-10
 Trigonometric (sin(x) + x² - 2 = 0) : C = 9.6747e-10
 Exponential (exp(x/100) - x/50 - 1 = 0) : C = 9.4805e-10
