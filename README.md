@@ -13,6 +13,7 @@ Benchmarking framework for evaluating dependency-aware scheduling algorithms for
 - **Comprehensive Metrics**: Makespan, CPU utilization, speedup, parallel efficiency, scheduling overhead
 - **Statistical Analysis**: Multiple trials with mean, standard deviation, min-max ranges
 - **Configurable Tests**: No decomposition baseline, sequential execution, multi-core parallel execution
+- **C Constant Calibration**: Empirical estimation of computational constant for fsolve complexity modeling
 
 ## Requirements
 
@@ -20,6 +21,8 @@ Benchmarking framework for evaluating dependency-aware scheduling algorithms for
 - NumPy
 - SciPy
 - NetworkX
+- psutil (for hardware detection)
+- matplotlib (for visualization)
 
 ## Installation
 
@@ -41,6 +44,9 @@ python MulticoreSeqScheduler.py
 # Results will be written to:
 # - comparison_tables.txt (performance metrics)
 # - precedence_graphs.txt (graph statistics)
+
+# Calibrate computational constant C for fsolve
+python C_estimation.py
 ```
 
 ## Usage
@@ -119,8 +125,10 @@ paralleleqsolver/
 ├── CONTRIBUTING.md
 ├── requirements.txt
 ├── MulticoreSeqScheduler.py
+├── C_estimation.py                  # C constant calibration tool
 ├── comparison_tables.txt (generated)
-└── precedence_graphs.txt (generated)
+├── precedence_graphs.txt (generated)
+└── c_estimation_results_*.json (generated) # Calibration results
 ```
 
 ## Performance Metrics
@@ -170,3 +178,5 @@ Project Link: [https://github.com/adelmoussaoui/paralleleqsolver/]
 - NetworkX library for graph algorithms
 - SciPy for nonlinear system solving
 - Multiprocessing for parallel execution
+- psutil for hardware detection
+- matplotlib for visualization
